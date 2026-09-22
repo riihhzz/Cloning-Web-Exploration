@@ -1,0 +1,182 @@
+/* Hacker Monochromatic Terminal Theme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #020502;
+    color: #00ff66;
+    font-family: 'Share Tech Mono', monospace;
+    overflow-x: hidden;
+    position: relative;
+    padding: 20px;
+}
+
+/* Matrix Background Canvas */
+#matrix-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.15;
+}
+
+.terminal-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(2, 8, 2, 0.90);
+    border: 1px solid #00ff66;
+    box-shadow: 0 0 20px rgba(0, 255, 102, 0.2);
+    border-radius: 4px;
+    padding: 25px;
+}
+
+/* Header */
+.terminal-header {
+    border-bottom: 1px dashed #00ff66;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.ascii-title pre {
+    color: #00ff66;
+    font-size: 7px;
+    line-height: 1;
+    text-shadow: 0 0 8px rgba(0, 255, 102, 0.5);
+    margin-bottom: 10px;
+}
+
+.system-status {
+    font-size: 0.85rem;
+    color: #00aa44;
+}
+
+/* Sections */
+.terminal-section {
+    margin-bottom: 30px;
+}
+
+.prompt-text {
+    font-size: 0.9rem;
+    color: #00aa44;
+    margin-bottom: 8px;
+}
+
+h1 {
+    font-size: 1.6rem;
+    color: #00ff66;
+    text-shadow: 0 0 5px rgba(0, 255, 102, 0.4);
+    margin-bottom: 8px;
+}
+
+.desc {
+    color: #aaffcc;
+    font-size: 0.95rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+    color: #00ff66;
+    margin-bottom: 15px;
+    border-left: 3px solid #00ff66;
+    padding-left: 8px;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.feature-box {
+    background: rgba(0, 30, 10, 0.5);
+    border: 1px solid #00aa44;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.feature-box h3 {
+    color: #00ff66;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.feature-box p {
+    color: #88cc99;
+    font-size: 0.85rem;
+}
+
+/* Interactive Terminal Box */
+.interactive-box {
+    background: #000500;
+    border: 1px solid #00ff66;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.terminal-output {
+    height: 140px;
+    overflow-y: auto;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.system-log {
+    color: #aaffcc;
+}
+
+.user-cmd {
+    color: #00ff66;
+}
+
+.highlight {
+    color: #ffffff;
+    background: #004411;
+    padding: 1px 4px;
+}
+
+.terminal-input-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-top: 1px solid #00aa44;
+    padding-top: 10px;
+}
+
+.prompt-symbol {
+    color: #00ff66;
+    font-weight: bold;
+}
+
+#user-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #00ff66;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.95rem;
+    width: 100%;
+}
+
+/* Footer */
+.terminal-footer {
+    border-top: 1px dashed #00ff66;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #00aa44;
+}
+
+@media (max-width: 600px) {
+    .ascii-title pre {
+        font-size: 4px;
+    }
+}

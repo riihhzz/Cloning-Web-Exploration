@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIIHHZZ // Terminal Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Matrix Hacker Background Canvas -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <div class="terminal-wrapper">
+        <!-- Header -->
+        <header class="terminal-header">
+            <div class="ascii-title">
+<pre>
+██████╗ ██╗██╗██╗  ██╗██╗  ██╗███████╗███████╗
+██╔══██╗██║██║██║  ██║██║  ██║╚══███╔╝╚══███╔╝
+██████╔╝██║██║███████║███████║  ███╔╝   ███╔╝ 
+██╔══██╗██║██║██╔══██║██╔══██║ ███╔╝    ███╔╝  
+██║  ██║██║██║██║  ██║██║  ██║███████╗███████╗
+</pre>
+            </div>
+            <div class="system-status">
+                <span>SYSTEM: ONLINE</span> | <span>USER: FARIH_MAULANA</span> | <span>NIM: 2409326</span>
+            </div>
+        </header>
+
+        <!-- Main Workspace -->
+        <main class="terminal-body">
+            <!-- Intro Section -->
+            <section class="terminal-section">
+                <p class="prompt-text">&gt; root@riihhzz-system:~# cat welcome_message.txt</p>
+                <h1>RIIHHZZ LEARNING PLATFORM V2.0</h1>
+                <p class="desc">Platform edukasi multimedia interaktif dengan sistem kendali terminal mandiri.</p>
+            </section>
+
+            <!-- 3 Fitur Utama Interaktif -->
+            <section class="terminal-section">
+                <p class="prompt-text">&gt; root@riihhzz-system:~# ls -l ./features</p>
+                <h2>[ 3 FITUR UTAMA SISTEM ]</h2>
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <h3>[01] Interactive CLI</h3>
+                        <p>Terminal perintah langsung yang merespons input teks pengguna secara real-time.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h3>[02] Matrix Visuals</h3>
+                        <p>Latar belakang animasi digital hacker dengan palet warna monokrom hijau.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h3>[03] Student Profile</h3>
+                        <p>Sistem database terintegrasi untuk verifikasi identitas pengembang dan NIM.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interactive Terminal Prompt Box -->
+            <section class="terminal-section interactive-box">
+                <p class="prompt-text">&gt; root@riihhzz-system:~# ./launch_terminal.sh</p>
+                <div class="terminal-output" id="terminal-output">
+                    <p class="system-log">Selamat datang di terminal RIIHHZZ. Ketik <span class="highlight">'help'</span> untuk melihat daftar perintah.</p>
+                </div>
+                <div class="terminal-input-line">
+                    <span class="prompt-symbol">guest@riihhzz:~$</span>
+                    <input type="text" id="user-input" autofocus autocomplete="off" placeholder="Ketik perintah di sini (cth: help, about, features, clear)...">
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="terminal-footer">
+            <p>&copy; 2026 RIIHHZZ Learning Platform. Universitas Pendidikan Indonesia.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
